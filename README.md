@@ -1,4 +1,4 @@
-<img src="fd.akchauhan2.freesite.vip" width="100px;" alt=""/><br />
+<img src="image/logo.png" width="100px;" alt=""/><br />
 
 # Family Verification Dashboard
 
@@ -10,5 +10,3 @@
 ## Contributors ✨
 
 ([akchauhan2](https://akchauhan2.com)):
-
-<img src="image/logo.png" width="100px;" alt=""/><br />
