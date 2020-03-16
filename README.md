@@ -1,4 +1,4 @@
-<img src="image/logo.png" width="100px;" alt=""/><br />
+<img src="image/logo.png" width="100px;" alt=""/>
 
 # Family Verification Dashboard
 
