@@ -1,0 +1,256 @@
+    html {
+        position: relative;
+        min-height: 100%;
+        font-size: 13px;
+    }
+    
+    body {
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 2
+    }
+    
+    .footer {
+        position: sticky;
+        bottom: 0;
+        width: 100%;
+        display: block;
+        background-color: #f5f5f5;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 10px;
+        .container {
+            padding: 0;
+            text-align: center;
+            position: relative;
+        }
+    }
+    
+    .digital-india {
+        vertical-align: middle;
+        border-style: none;
+        max-height: 100%;
+        right: 15px;
+        position: absolute;
+        display: block;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #fff;
+        padding: 5px 10px;
+        img {
+            max-height: 35px;
+        }
+    }
+    
+    body>.container {
+        padding: 60px 15px 0;
+    }
+    
+    code {
+        font-size: 80%;
+    }
+    
+    .bg-ak {
+        background: #15202b !important;
+    }
+    
+    .img-logo {
+        margin: 0 20px;
+        max-width: 50px;
+    }
+    
+    section#main {
+        display: flex;
+        overflow: hidden;
+        max-height: 100vh;
+        position: relative;
+        #viewDiv {
+            min-height: 200px;
+            height: 100%;
+            width: 65%;
+        }
+        .container {
+            width: 35%;
+            padding: 10px;
+            box-sizing: border-box;
+            color: #000;
+            max-height: 100%;
+            background: #fff;
+            overflow-y: auto;
+            scroll-behavior: smooth;
+            .content {
+                padding: 10px;
+                margin-top: -100vh;
+                transition: .5s;
+                #totalCount {
+                    display: flex;
+                    flex-direction: column;
+                    box-shadow: 0 4px 10px #ccc;
+                    padding: 10px;
+                    margin: 1%;
+                }
+                #countData {
+                    display: flex;
+                }
+                .countSpan {
+                    box-shadow: 0 4px 10px #ccc;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 1%;
+                    justify-content: center;
+                    align-items: center;
+                    width: 48%;
+                    display: inline-block;
+                    padding: 20px 20px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    h2 {
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+                p {
+                    margin: 0 0 15px 0;
+                }
+            }
+        }
+    }
+    
+    div.esri-component.esri-attribution.esri-widget {
+        display: none !important;
+    }
+    
+    #loader {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    
+    @media only screen and (max-width: 986px) {
+        .container {
+            position: absolute;
+            right: 0;
+            min-width: 300px;
+        }
+    }
+    
+    @media only screen and (max-width: 768px) {
+        html {
+            font-size: 12px;
+        }
+        body {
+            height: auto;
+            overflow: auto;
+            max-width: 100vw;
+        }
+        nav.navbar {
+            display: flex;
+            flex-wrap: nowrap;
+            padding: 5px 10px;
+            margin: 0;
+            a {
+                white-space: nowrap;
+                overflow: hidden;
+                display: block;
+                small {
+                    overflow-x: auto;
+                }
+            }
+            .img-logo {
+                margin: 0 10px 0 0;
+            }
+        }
+        section#main {
+            display: block;
+            max-height: unset;
+            height: auto !important;
+            min-height: 100vh;
+            #viewDiv {
+                width: 100%;
+                max-height: 60vh;
+            }
+            .container {
+                position: relative;
+                display: block;
+                width: 100%;
+            }
+        }
+        .digital-india {
+            display: none;
+        }
+        footer {
+            .container {
+                padding: 0;
+            }
+        }
+    }
+    
+    #familyInfo {
+        box-sizing: border-box;
+        .familyInfoDiv {
+            padding: 10px 0;
+            margin: 20px 1% 10px 1%;
+            box-sizing: border-box;
+            box-shadow: 0 4px 10px #ccc;
+        }
+    }
+    
+    table tbody tr {
+        box-shadow: 0 2px 4px #000000;
+    }
+    
+    tr th {
+        text-transform: capitalize;
+        text-align: center;
+    }
+    
+    tr td {
+        text-align: center;
+    }
+    
+    .mtm-10 {
+        margin-top: -10px;
+    }
+    
+    .mt-0 {
+        zoom: 1 !important;
+    }
+    
+    .mtm-20 {
+        margin-top: -20px;
+        zoom: .8;
+    }
+    
+    .transition {
+        transition: .8s;
+    }
+    
+    .opacity-0 {
+        opacity: 0;
+    }
+    
+    .opacity-1 {
+        opacity: 1;
+    }
+    
+    .chartDrawDiv {
+        padding: 10px 0;
+        margin: 20px 1% 10px 1%;
+        box-sizing: border-box;
+        box-shadow: 0 4px 10px #ccc;
+    }

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="shortcut icon" href="/image/logo.png" type="image/x-icon">
+    <title>Family Verfication</title>
+    <script src="./config/config.js"></script>
+    <script>
+        var dojoConfig = {
+            async: true,
+            packages: [{
+                name: "define",
+                location: location.pathname.replace(/\/[^/]*$/, "") + "/js/define"
+            }]
+        };
+    </script>
+    <script src="https://kit.fontawesome.com/3f2a2e95a9.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <link rel="stylesheet" href="./vendor/bootstrap-4.3.1-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://js.arcgis.com/4.14/esri/themes/light/main.css" />
+    <meta name="author" content="Ajay Kumar Chauhan" />
+    <script src="https://js.arcgis.com/4.14/"></script>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark bg-ak">
+            <img class="img-logo" src="image/logo.png" alt="" />
+            <a class="navbar-brand" href="#">
+                <small class="d-block xx-small">मुख्यमंत्री परिवार समृद्धि योजना</small>
+                <small class="d-block xx-small">MUKHYA MANTRI PARIVAR SAMRIDHI YOJANA</small>
+            </a>
+            <span class="digital-india"><img src="image/digital-india.png" alt=""></span>
+        </nav>
+    </header>
+    <section id="main">
+        <div id="viewDiv" class="viewdiv"></div>
+        <div class="container">
+            <div class="content">
+                <!-- <div class="d-flex mb-3 justify-content-center">
+                    <input type="date" id="fromDate" class="p-1 text-center">
+                    <input type="date" id="toDate" class="p-1 text-center">
+                </div> -->
+
+                <div class="d-flex mb-3 justify-content-center">
+                    <select class="custom-select mr-sm-2" id="doneBy"></select>
+                </div>
+
+                <div id="chartDiv" class="mb-5">
+                    <div class="chartDrawDiv">
+                        <div class="row mx-0">
+                            <div class="col col-9">
+                                <h3 class="text-center">Officer Charts</h3>
+                            </div>
+                            <div class="col col-3 d-flex justify-content-center align-items-center">
+                                <button class="btn btn-danger" id="chartTogglebtn">Show/Hide</button>
+                            </div>
+                            <div class="col col-12" id="theChartDiv">
+                                <canvas id="theChartCanvas"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="totalCount">
+                    <span class="text-center">
+                        <h2>Total Corrections</h2>
+                    </span>
+                    <span class="text-center">
+                        <h2 id="totalCorrCount">20</h2>
+                    </span>
+                    <span class="text-center">
+                        <h6 id="totalCorrBy">All</h6>
+                    </span>
+                </div>
+            </div>
+
+            <div id="familyInfo" class="mtm-20 opacity-0">
+                <div class="familyInfoDiv">
+                    <div class="row mx-0">
+                        <div class="col col-9">
+                            <h3 class="text-center">Family Info</h3>
+                        </div>
+                        <div class="col col-3 d-flex justify-content-center align-items-center">
+                            <button class="btn btn-danger" id="tableTogglebtn">Show/Hide</button>
+                        </div>
+                        <div class="col col-12 familyTable" id="familyTable">
+                            <table id="familyTableBody">
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <footer class="footer fixed-bottom">
+        <div class="container">
+            <span class="mx-3 text-muted">Family Verification Dashboard</span>
+            <span class="mx-3 text-muted">&copy; GMDA</span>
+        </div>
+    </footer>
+    <span id="loader"><img src="image/loading.gif"></span>
+</body>
+<script src="js/script.js"></script>
+<script src="js/main.js"></script>
+
+</html>
