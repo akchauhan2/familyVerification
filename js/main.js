@@ -171,15 +171,19 @@ require([
                 var colors = []
                 var borders = []
                 for (i = 0; i < data.length; i++) {
-                    colors.push(randomcol(.2))
-                    borders.push(randomcol())
+                    colors.push(randomcol(0.3))
                 }
+
+                colors.forEach(function(c) {
+                    x = c.replace("0.3", "1")
+                    borders.push(x)
+                })
 
 
                 $("#theChartDiv").toggle("slow")
                 var ctx = document.getElementById('theChartCanvas').getContext('2d');
                 var myChart = new Chart(ctx, {
-                    type: 'pie',
+                    type: 'doughnut',
                     data: {
                         labels,
                         datasets: [{
